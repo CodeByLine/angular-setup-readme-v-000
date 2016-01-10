@@ -31,6 +31,7 @@ This means that you'll end up with a directory structure like this -
         - TodoForm.html
       - views/
         - Todo.html
+    - app.js
   - angular.js
 - img/
 - css/
@@ -53,6 +54,7 @@ There are plenty of other ways to structure your application. One other popular 
       - TodoForm.html
     - views/
       - Todo.html
+  - app.js
   - angular.js
 - img/
 - css/
