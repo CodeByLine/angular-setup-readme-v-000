@@ -14,29 +14,29 @@ We need to ensure that we have a level-headed way of structuring our application
 There are plenty of other ways to structure your application. One popular way is to just have folders for controllers, directives etc without having folders for each module, as follows - 
 
 ```
-- js/
-  - directives/
-    - TodoEscape.js
-    - TodoFocus.js
-    - LoginForm.js
-  - controllers/
-    - TodoController.js
-    - LoginController.js
-  - services/
-    - TodoService.js
-    - LoginService.js
-  - templates/
-    - partials/
-      - TodoForm.html
-      - LoginForm.html
-    - views/
-      - Todo.html
-      - Login.html
-  - app.js
-  - angular.js
-- img/
-- css/
-- index.html
+├── js/
+│   ├── directives/
+│   │   ├── TodoEscape.js
+│   │   ├── TodoFocus.js
+│   │   ├── LoginForm.js
+│   ├── controllers/
+│   │   ├── TodoController.js
+│   │   ├── LoginController.js
+│   ├── services/
+│   │   ├── TodoService.js
+│   │   ├── LoginService.js
+│   ├── templates/
+│   │   ├── partials/
+│   │   │	├── TodoForm.html
+│   │   │	├── LoginForm.html
+│   │   ├── views/
+│   │   │	├── Todo.html
+│   │   │	├── Login.html
+│   ├── app.js
+│   ├── angular.js
+├── img/
+├── css/
+├── index.html
 ```
 
 This works, but as your application gets bigger, the folders will end up with loads of files in them, without us knowing what part of the application they are responsible for.
@@ -45,40 +45,40 @@ This is why we separate our app into "modules". We can then immediately know wha
 
 Like a normal application, we'll have separate folders for our JavaScript, CSS and images. However, inside our JavaScript folder we'll have individual folders for each module in our Angular application. Angular needs at least one module to kick things off, and we're going to call our main module "app".
 
-This means that you'll end up with a directory structure like this -
+This means that you'll end up with a directory structure like this:
 
 ```
-- js/
-  - todos/
-    - directives/
-      - TodoEscape.js
-      - TodoFocus.js
-    - controllers/
-      - TodoController.js
-    - services/
-      - TodoService.js
-    - templates/
-      - partials/
-        - TodoForm.html
-      - views/
-        - Todo.html
-  - login/
-    - directives/
-      - LoginForm.js
-    - controllers/
-      - LoginController.js
-    - services/
-      - LoginService.js
-    - templates/
-      - partials/
-        - LoginForm.html
-      - views/
-        - Login.html
-    - app.js
-  - angular.js
-- img/
-- css/
-- index.html
+├── js/
+│   ├── todos/
+│   │   ├── directives/
+│   │   │   ├── TodoEscape.js
+│   │   │   ├── TodoFocus.js
+│   │   ├── controllers/
+│   │   │   ├── TodoController.js
+│   │   ├── services/
+│   │   │   ├── TodoService.js
+│   │   ├── templates/
+│   │   │   ├── partials/
+│   │   │   │   ├── TodoForm.html
+│   │   │   ├── views/
+│   │   │   │   ├── Todo.html
+│   ├── login/
+│   │   ├── directives/
+│   │   │   ├── LoginForm.js
+│   │   ├── controllers/
+│   │   │   ├── LoginController.js
+│   │   ├── services/
+│   │   │   ├── LoginService.js
+│   │   ├── templates/
+│   │   │   ├── partials/
+│   │   │   │   ├── LoginForm.html
+│   │   │   ├── views/
+│   │   │   │   ├── Login.html
+│   ├── app.js
+│   ├── angular.js
+├── img/
+├── css/
+├── index.html
 ```
 
 This is a feature based file structure, as we're splitting off into individual modules instead of having all of our controllers/directives/etc. in one folder. Don't be scared - we will be touching on controllers/directives/modules/etc very soon!
