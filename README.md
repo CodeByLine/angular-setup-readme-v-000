@@ -36,7 +36,7 @@ There are plenty of other ways to structure your application. One popular way is
 │   ├── angular.js
 ├── img/
 ├── css/
-├── index.html/
+├── index.html
 ```
 
 This works, but as your application gets bigger, the folders will end up with loads of files in them, without us knowing what part of the application they are responsible for.
@@ -78,7 +78,7 @@ This means that you'll end up with a directory structure like this:
 │   ├── angular.js
 ├── img/
 ├── css/
-├── index.html/
+├── index.html
 ```
 
 This is a feature based file structure, as we're splitting off into individual modules instead of having all of our controllers/directives/etc. in one folder. Don't be scared - we will be touching on controllers/directives/modules/etc very soon!
