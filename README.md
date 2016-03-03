@@ -13,6 +13,7 @@ We need to ensure that we have a level-headed way of structuring our application
 
 There are plenty of other ways to structure your application. One popular way is to just have folders for controllers, directives etc without having folders for each module, as follows - 
 
+```
 - js/
   - directives/
     - TodoEscape.js
@@ -36,6 +37,7 @@ There are plenty of other ways to structure your application. One popular way is
 - img/
 - css/
 - index.html
+```
 
 This works, but as your application gets bigger, the folders will end up with loads of files in them, without us knowing what part of the application they are responsible for.
 
@@ -45,6 +47,7 @@ Like a normal application, we'll have separate folders for our JavaScript, CSS a
 
 This means that you'll end up with a directory structure like this -
 
+```
 - js/
   - todos/
     - directives/
@@ -76,5 +79,6 @@ This means that you'll end up with a directory structure like this -
 - img/
 - css/
 - index.html
+```
 
 This is a feature based file structure, as we're splitting off into individual modules instead of having all of our controllers/directives/etc. in one folder. Don't be scared - we will be touching on controllers/directives/modules/etc very soon!
